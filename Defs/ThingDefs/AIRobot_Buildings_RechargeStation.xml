@@ -15,13 +15,13 @@
 	</ThingDef>
 
 	<ThingDef Class="BaseRobot.ThingDef_BaseRobot_Building_RechargeStation" ParentName="Base_X2_Building_RechargeStation" Name="Thing_BaseRechargeStation" Abstract="True">
-		<ThingClass>BaseRobot.Building_BaseRobotRechargeStation</ThingClass>
-		<AltitudeLayer>Building</AltitudeLayer>
+		<thingClass>BaseRobot.Building_BaseRobotRechargeStation</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Standable</passability>
-		<PathCost>70</PathCost>
-		<CastEdgeShadows>True</CastEdgeShadows>
+		<pathCost>70</pathCost>
+		<castEdgeShadows>True</castEdgeShadows>
 		<useHitPoints>True</useHitPoints>
-		<Size>(1,1)</Size>
+		<size>(1,1)</size>
 		<statBases>
 			<Flammability>1.0</Flammability>
 		</statBases>

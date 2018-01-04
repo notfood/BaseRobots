@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 	<!-- =========== Bases =========== -->
 	<ThingDef Name="DisabledBase" Abstract="True">
@@ -36,4 +36,4 @@
 		</thingCategories>
 	</ThingDef>
 
-</ThingDefs>
+</Defs>

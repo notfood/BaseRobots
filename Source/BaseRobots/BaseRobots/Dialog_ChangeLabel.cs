@@ -76,7 +76,7 @@ namespace BaseRobot
 				Find.WindowStack.TryRemove (this, true);
 				Messages.Message ("RobotGainsName".Translate (new object[] {
 					this.curName
-				}), this.pawn, MessageSound.Benefit);
+                }), this.pawn, RimWorld.MessageTypeDefOf.PositiveEvent);
 			}
 		}
 	}

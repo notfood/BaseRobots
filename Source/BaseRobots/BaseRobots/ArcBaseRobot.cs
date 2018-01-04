@@ -95,7 +95,7 @@ namespace BaseRobot
 			}
 			base.Destroy (0);
 
-			if (mode != null && thingDef != null) {
+			if (thingDef != null) {
 				BaseRobot_disabled BaseRobot_disabled = (BaseRobot_disabled)GenSpawn.Spawn (thingDef, intVec, map);
 				BaseRobot_disabled.stackCount = 1;
 				BaseRobot_disabled.rechargestation = rechargestation;

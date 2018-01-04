@@ -203,7 +203,7 @@ namespace BaseRobot
 		//
 		[CompilerGenerated]
 		[Serializable]
-		private sealed class Something
+		public sealed class Something
 		{
 			public static readonly BaseRobot_Helper.Something blah = new BaseRobot_Helper.Something ();
 

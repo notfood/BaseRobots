@@ -167,7 +167,7 @@ namespace BaseRobot
 					if (PawnUtility.ShouldSendNotificationAbout (this.pawn)) {
 						Messages.Message ("MessageInvoluntarySleep".Translate (new object[] {
 							this.pawn.LabelShort
-						}), this.pawn, MessageSound.Negative);
+						}), this.pawn, MessageTypeDefOf.NegativeHealthEvent);
 					}
 				}
 			}

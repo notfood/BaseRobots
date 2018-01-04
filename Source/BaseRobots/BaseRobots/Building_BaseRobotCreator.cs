@@ -23,7 +23,7 @@ namespace BaseRobot
 		{
 			PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed (pawnDefName, true);
 			//PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest (named, faction, 2, -1, true, true, false, false, false, false, 0, false, false, true, false, false, null, new float? (0), new float? (0), new Gender? (1), new float? (0), null);
-			PawnGenerationRequest gen = new PawnGenerationRequest (named, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, false, false, 0, false, false, true, false, false, null, new float? (0), new float? (0), Gender.None, 0, null);
+			PawnGenerationRequest gen = new PawnGenerationRequest (named, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, false, false, 0, false, false, true, false, false, false, false, null, 0, 0, 0, Gender.None, 0, null);
 			ArcBaseRobot newThing = (ArcBaseRobot)PawnGenerator.GeneratePawn (gen);
 			return (ArcBaseRobot)Building_BaseRobotCreator.Spawn (newThing, position, map);
 		}

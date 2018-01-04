@@ -43,5 +43,10 @@ namespace BaseRobot
 			yield return this.DespawnIntoContainer ();
 			yield break;
 		}
-	}
+
+        public override bool TryMakePreToilReservations ()
+        {
+            return pawn.Reserve (job.targetA.Cell, job);
+        }
+    }
 }

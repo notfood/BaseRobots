@@ -12,11 +12,11 @@ namespace BaseRobot
 		//
 		public List<ThingDef_BaseRobot.RobotSkills> robotSkills = new List<ThingDef_BaseRobot.RobotSkills> ();
 
-		public ThingDef destroyedDef = null;
+		public ThingDef destroyedDef;
 
-		public bool allowLearning = false;
+		public bool allowLearning;
 
-		private WorkTags robotWorkTagsInt = 0;
+		public WorkTags robotWorkTagsInt;
 
 		public List<ThingDef_BaseRobot.RobotWorkTypes> robotWorkTypes = new List<ThingDef_BaseRobot.RobotWorkTypes> ();
 
@@ -25,7 +25,7 @@ namespace BaseRobot
 		//
 		public WorkTags robotWorkTags {
 			get {
-				bool flag = this.robotWorkTagsInt == null && this.robotWorkTypes.Count > 0;
+				bool flag = this.robotWorkTypes.Count > 0;
 				if (flag) {
 					this.InitWorkTagsFromWorkTypes ();
 				}

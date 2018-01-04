@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 	<ThingDef Class="BaseRobot.ThingDef_BaseRobot" Name="Thing_BaseRobot" Abstract="True">
 		<thingClass>BaseRobot.ArcBaseRobot</thingClass>
@@ -67,4 +67,4 @@
 		</race>
 	</ThingDef>
 
-</ThingDefs>
+</Defs>

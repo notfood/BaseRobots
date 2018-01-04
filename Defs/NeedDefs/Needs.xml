@@ -2,7 +2,7 @@
 <Defs>
 
   <NeedDef>
-    <DefName>Battery</DefName>
+    <defName>Battery</defName>
     <needClass>BaseRobot.Need_Battery</needClass>
     <label>battery</label>
     <description>Battery is how much charge a robot has left.</description>

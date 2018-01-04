@@ -305,12 +305,6 @@ namespace BaseRobot
 		{
 			int num = 31367676;
 
-			/*foreach (Gizmo gizmo in this.GetGizmos) {
-				yield return gizmo;
-				gizmo = null;
-			}/**/
-
-			IEnumerator<Gizmo> enumerator = null;
 			bool flag = this.robot == null && !this.robotIsDestroyed;
 			if (flag) {
 				Command_Action command_Action = new Command_Action ();
@@ -380,7 +374,6 @@ namespace BaseRobot
 				yield return command_Action5;
 				command_Action5 = null;
 			}
-			yield break;
 			yield break;
 		}
 
