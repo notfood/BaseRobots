@@ -20,5 +20,6 @@
 	<AIRobot_Label_ActivateAllRobots>Activate All</AIRobot_Label_ActivateAllRobots>
 	<AIRobot_ActivateAllRobots>Activate all available robots.</AIRobot_ActivateAllRobots>
 	<AIRobot_RobotIsDestroyed>Robot is destroyed!</AIRobot_RobotIsDestroyed>
-	
+	<AIRobot_Repair>Repair the robot after it has been destroyed.</AIRobot_Repair>
+	<AIRobot_Label_Repair>Repair</AIRobot_Label_Repair>
 </LanguageData>
