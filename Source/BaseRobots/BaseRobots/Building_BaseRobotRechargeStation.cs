@@ -23,10 +23,12 @@ namespace BaseRobot
 
 		private static Texture2D UI_ButtonStart = ContentFinder<Texture2D>.Get ("UI/Commands/Robots/UI_Start", true);
 
-		//
-		// Fields
-		//
-		private bool robotSpawnedOnce = false;
+        private static Texture2D UI_ButtonRepair = ContentFinder<Texture2D>.Get("UI/Commands/Robots/UI_Repair", true);
+
+        //
+        // Fields
+        //
+        private bool robotSpawnedOnce = false;
 
 		public ArcBaseRobot robot;
 
@@ -78,10 +80,15 @@ namespace BaseRobot
 
 		private string txtRecallAllRobots = "AIRobot_RecallAllRobots";
 
-		//
-		// Properties
-		//
-		public override Graphic Graphic {
+        private string lbRepairRobot = "AIRobot_Label_Repair";
+
+        private string txtRepairRobot = "AIRobot_Repair";
+
+
+        //
+        // Properties
+        //
+        public override Graphic Graphic {
 			get {
 				bool flag = this.PrimaryGraphic == null;
 				Graphic result;
@@ -179,6 +186,13 @@ namespace BaseRobot
 				}
 			}
 		}
+
+        private void Button_RepairDestroyedRobot()
+        {
+            this.robot = null;
+            this.robotIsDestroyed = false;
+            this.Button_SpawnBot();
+        }
 
 		private void Button_ResetDestroyedRobot ()
 		{
@@ -359,7 +373,24 @@ namespace BaseRobot
 			command_Action4.groupKey = num + 4;
 			yield return command_Action4;
 			command_Action4 = null;
-			bool godMode = DebugSettings.godMode;
+
+            Command_Action command_Action6 = new Command_Action();
+            command_Action6.defaultLabel = Translator.Translate(this.lbRepairRobot); ;
+            command_Action6.defaultDesc = Translator.Translate(this.txtRepairRobot); ;
+            command_Action6.icon = Building_BaseRobotRechargeStation.UI_ButtonRepair;
+            command_Action6.activateSound = SoundDef.Named("Click");
+            command_Action6.action = new Action(this.Button_RepairDestroyedRobot);
+            command_Action6.disabled = !this.robotIsDestroyed;
+            command_Action6.disabledReason = "Robot Is Not Destroyed";
+            command_Action6.groupKey = num + 10;
+            yield return command_Action6;
+            command_Action6 = null;
+
+
+
+
+
+            bool godMode = DebugSettings.godMode;
 			if (godMode) {
 				Command_Action command_Action5 = new Command_Action ();
 				command_Action5.defaultLabel = "(DEBUG) Reset destroyed robot";
@@ -373,9 +404,12 @@ namespace BaseRobot
 				command_Action5.groupKey = num + 9;
 				yield return command_Action5;
 				command_Action5 = null;
-			}
-			yield break;
-		}
+                
+            }
+            
+            yield break;
+            
+        }
 
 		public void GetGraphics ()
 		{
@@ -399,7 +433,12 @@ namespace BaseRobot
 			if (flag5) {
 				Building_BaseRobotRechargeStation.UI_ButtonStart = ContentFinder<Texture2D>.Get ("UI/Commands/Robots/UI_Start", true);
 			}
-		}
+            bool flag6 = Building_BaseRobotRechargeStation.UI_ButtonRepair == null;
+            if (flag6)
+            {
+                Building_BaseRobotRechargeStation.UI_ButtonRepair = ContentFinder<Texture2D>.Get("UI/Commands/Robots/UI_Repair", true);
+            }
+        }
 
 		public override string GetInspectString ()
 		{

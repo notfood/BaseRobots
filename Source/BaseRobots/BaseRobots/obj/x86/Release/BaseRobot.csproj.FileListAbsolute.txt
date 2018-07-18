@@ -1,0 +1,4 @@
+H:\RimWorld-BaseRobots\Assemblies\BaseRobot.dll
+H:\RimWorld-BaseRobots\Source\BaseRobots\BaseRobots\obj\x86\Release\BaseRobot.csproj.CoreCompileInputs.cache
+H:\RimWorld-BaseRobots\Source\BaseRobots\BaseRobots\obj\x86\Release\BaseRobot.dll
+H:\RimWorld-BaseRobots\Source\BaseRobots\BaseRobots\obj\x86\Release\BaseRobot.csprojAssemblyReference.cache
