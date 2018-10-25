@@ -47,7 +47,8 @@
 									</groups>
 								</li>
 								<li>
-									<def>LeftSightSensor</def>
+									<def>SightSensor</def>
+									<customLabel>left sight sensor</customLabel>
 									<coverage>0.15</coverage>
 									<groups>
 										<li>FullHead</li>
@@ -55,7 +56,8 @@
 									</groups>
 								</li>
 								<li>
-									<def>RightSightSensor</def>
+									<def>SightSensor</def>
+									<customLabel>right sight sensor</customLabel>
 									<coverage>0.15</coverage>
 									<groups>
 										<li>FullHead</li>
@@ -63,7 +65,8 @@
 									</groups>
 								</li>
 								<li>
-									<def>LeftHearingSensor</def>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
 									<coverage>0.05</coverage>
 									<groups>
 										<li>UpperHead</li>
@@ -71,7 +74,8 @@
 									</groups>
 								</li>
 								<li>
-									<def>RightHearingSensor</def>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
 									<coverage>0.05</coverage>
 									<groups>
 										<li>UpperHead</li>
@@ -97,21 +101,24 @@
 						</li>
 					</parts>
 				</li><li>
-					<def>LeftMechanicalShoulder</def>
+					<def>MechanicalShoulder</def>
+					<customLabel>left shoulder</customLabel>
 					<coverage>0.1</coverage>
 					<groups>
 						<li>Shoulders</li>
 					</groups>
 					<parts>
 						<li>
-							<def>LeftMechanicalArm</def>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
 							<coverage>0.95</coverage>
 							<groups>
 								<li>Arms</li>
 							</groups>
 							<parts>
 								<li>
-									<def>LeftMechanicalHand</def>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
 									<coverage>0.2</coverage>
 									<height>Bottom</height>
 									<groups>
@@ -119,7 +126,8 @@
 									</groups>
 									<parts>
 										<li>
-											<def>LeftHandMechanicalMiddleFinger</def>
+											<def>MechanicalFinger</def>
+											<customLabel>left pinky</customLabel>
 											<coverage>0.05</coverage>
 											<groups>
 												<li>Hands</li>
@@ -127,7 +135,8 @@
 											</groups>
 										</li>
 										<li>
-											<def>LeftHandMechanicalIndexFinger</def>
+											<def>MechanicalFinger</def>
+											<customLabel>left index finger</customLabel>
 											<coverage>0.05</coverage>
 											<groups>
 												<li>Hands</li>
@@ -135,7 +144,8 @@
 											</groups>
 										</li>
 										<li>
-											<def>LeftHandMechanicalThumb</def>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
 											<coverage>0.05</coverage>
 											<groups>
 												<li>Hands</li>
@@ -149,21 +159,24 @@
 					</parts>
 				</li>
 				<li>
-					<def>RightMechanicalShoulder</def>
+					<def>MechanicalShoulder</def>
+					<customLabel>right mechanical shoulder</customLabel>
 					<coverage>0.1</coverage>
 					<groups>
 						<li>Shoulders</li>
 					</groups>
 					<parts>
 						<li>
-							<def>RightMechanicalArm</def>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
 							<coverage>0.95</coverage>
 							<groups>
 								<li>Arms</li>
 							</groups>
 							<parts>
 								<li>
-									<def>RightMechanicalHand</def>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
 									<coverage>0.2</coverage>
 									<height>Bottom</height>
 									<groups>
@@ -171,7 +184,8 @@
 									</groups>
 									<parts>
 										<li>
-											<def>RightHandMechanicalMiddleFinger</def>
+											<def>MechanicalFinger</def>
+											<customLabel>right pinky</customLabel>
 											<coverage>0.05</coverage>
 											<groups>
 												<li>Hands</li>
@@ -179,7 +193,8 @@
 											</groups>
 										</li>
 										<li>
-											<def>RightHandMechanicalIndexFinger</def>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
 											<coverage>0.05</coverage>
 											<groups>
 												<li>Hands</li>
@@ -187,7 +202,8 @@
 											</groups>
 										</li>
 										<li>
-											<def>RightHandMechanicalThumb</def>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
 											<coverage>0.05</coverage>
 											<groups>
 												<li>Hands</li>
@@ -209,7 +225,8 @@
 					</groups>
 				</li>
 				<li>
-					<def>BaseRobot_BatteryLeft</def>
+					<def>BaseRobot_Battery</def>
+					<customLabel>left battery</customLabel>
 					<coverage>0.2</coverage>
 					<depth>Inside</depth>
 					<groups>
@@ -217,7 +234,8 @@
 					</groups>
 				</li>
 				<li>
-					<def>BaseRobot_BatteryRight</def>
+					<def>BaseRobot_Battery</def>
+					<customLabel>right battery</customLabel>
 					<coverage>0.2</coverage>
 					<depth>Inside</depth>
 					<groups>
@@ -233,7 +251,8 @@
 					</groups>
 				</li>
 				<li>
-					<def>LeftMechanicalLeg</def>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
 					<groups>
@@ -241,7 +260,8 @@
 					</groups>
 					<parts>
 						<li>
-							<def>LeftMechanicalFoot</def>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
 							<coverage>0.2</coverage>
 							<groups>
 								<li>Feet</li>
@@ -250,7 +270,8 @@
 					</parts>
 				</li>
 				<li>
-					<def>RightMechanicalLeg</def>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
 					<groups>
@@ -258,7 +279,8 @@
 					</groups>
 					<parts>
 						<li>
-							<def>RightMechanicalFoot</def>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
 							<coverage>0.2</coverage>
 							<groups>
 								<li>Feet</li>

@@ -15,8 +15,7 @@ namespace BaseRobot
 		public override void DoCell (Rect rect, Pawn pawn, PawnTable table)
 		{
 			// Allow robots to be assigned to any area
-			AllowedAreaMode mode = AllowedAreaMode.Any;
-			AreaAllowedGUI.DoAllowedAreaSelectors (rect, pawn, mode);
+			AreaAllowedGUI.DoAllowedAreaSelectors (rect, pawn);
 		}
 	}
 }

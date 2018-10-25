@@ -28,7 +28,7 @@ namespace BaseRobot
 				map = bot.rechargeStation.Map;
 			}
 			if (map == null) {
-				map = Find.VisibleMap;
+                map = bot.Map;
 			}
 
 			Building_BaseRobotRechargeStation result;
@@ -190,7 +190,7 @@ namespace BaseRobot
 				this.skills = new Pawn_SkillTracker (this);
 				this.SetSkills ();
 				this.story = new Pawn_StoryTracker (this);
-				this.story.bodyType = this.gender == Gender.Female ? RimWorld.BodyType.Male : RimWorld.BodyType.Female;
+                this.story.bodyType = this.gender == Gender.Female ? RimWorld.BodyTypeDefOf.Male : RimWorld.BodyTypeDefOf.Female;
 				this.story.crownType = Verse.CrownType.Average;
 				base.Drawer.renderer.graphics.ResolveApparelGraphics ();
 			}

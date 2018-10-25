@@ -104,7 +104,7 @@
 				<li Class="ThinkNode_ConditionalPrisoner">
 					<invert>true</invert>
 					<subNodes>
-						<li Class="ThinkNode_ConditionalNeutralFaction">
+						<li Class="ThinkNode_ConditionalNonPlayerNonHostileFaction">
 							<subNodes>
 								<li Class="JobGiver_ExitMapBest" />
 							</subNodes>

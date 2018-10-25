@@ -44,9 +44,9 @@ namespace BaseRobot
 			yield break;
 		}
 
-        public override bool TryMakePreToilReservations ()
+        public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return pawn.Reserve (job.targetA.Cell, job);
+            return pawn.Reserve(job.targetA.Cell, job);
         }
     }
 }

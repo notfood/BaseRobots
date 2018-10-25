@@ -5,18 +5,25 @@
 
   <ThingDef>
     <defName>AIRobot_MinifiedRechargeStation</defName>
-    <thingClass>MinifiedThing</thingClass>
     <label>Robot</label>
+    <thingClass>MinifiedThing</thingClass>
     <category>Item</category>
     <useHitPoints>true</useHitPoints>
     <selectable>true</selectable>
     <altitudeLayer>Item</altitudeLayer>
-    <drawerType>RealtimeOnly</drawerType> <!-- for CompForbiddable -->
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <tickerType>Normal</tickerType>
+    <!-- for CompForbiddable -->
+    <drawerType>RealtimeOnly</drawerType>
+    <statBases>
+      <Mass>1</Mass>
+    </statBases>
     <comps>
-      <li>
-        <compClass>CompForbiddable</compClass>
-      </li>
+      <li Class="CompProperties_Forbiddable"/>
     </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
     <alwaysHaulable>true</alwaysHaulable>
     <rotatable>false</rotatable>
     <pathCost>15</pathCost>

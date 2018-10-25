@@ -5,13 +5,13 @@
 
 	<ThingDef Class="BaseRobot.ThingDef_BaseRobot_Building_RechargeStation" Name="Base_X2_Building_RechargeStation" Abstract="True">
 		<category>Building</category>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<selectable>true</selectable>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<repairEffect>Repair</repairEffect>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>BuildingRubble</filthLeaving>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 	</ThingDef>
 
 	<ThingDef Class="BaseRobot.ThingDef_BaseRobot_Building_RechargeStation" ParentName="Base_X2_Building_RechargeStation" Name="Thing_BaseRechargeStation" Abstract="True">
@@ -37,6 +37,9 @@
 				<transmitsPower>false</transmitsPower>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>Robots</li>
+		</thingCategories>
 	</ThingDef>
 
 </Defs>
